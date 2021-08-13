@@ -61,7 +61,7 @@ button.navbar-toggler {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 100vh;
   color: var(--gimblet);
 }
 
