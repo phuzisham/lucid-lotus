@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap');
+
+body,
+p,
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+:root {
+  --palm-leaf: #14210A;
+  --funk-green: #226019;
+  --gimblet: #C2BC7B;
+  --fruit-salad: #64994A;
+  --sirocco: #627E80;
+  --pink: #e8bdc4;
+  --rose: #8b575b;
+  --t-gimblet: rgba(194, 188, 123, 0.7);
+}
+
+section,
+footer {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+section#services {
+  padding-bottom: 0;
+}
+
+.navbar {
+  background-color: var(--sirocco);
+}
+
+.navbar a {
+  color: var(--palm-leaf);
+}
+
+.navbar a:hover {
+  color: var(--fruit-salad);
+}
+
+a.navbar-brand {
+  color: var(--pink);
+}
+
+button.navbar-toggler {
+  background-color: var(--rose);
+  color: white;
+}
+
+.masthead {
+  background-image: url(../assets/masthead.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  color: var(--gimblet);
+}
+
+.masthead h1 {
+  margin-top: 72px;
+}
+
+#services {
+  background-color: var(--palm-leaf);
+}
+
+#massage {
+  background-image: url(../assets/massage.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 260px;
+}
+
+#acutonics {
+  background-image: url(../assets/acutonics.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 260px;
+}
+
+#yoga {
+  background-image: url(../assets/yoga.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 260px;
+}
+
+#lotus {
+  background-image: url(../assets/lotus.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 260px;
+}
+
+#esthetics {
+  background-image: url(../assets/esthetics.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 260px;
+}
+
+#breath {
+  background-image: url(../assets/breath.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 260px;
+}
+
+.service .caption {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: var(--t-gimblet);
+    color: white;;
+}
+
+.service .caption:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.funky-back {
+  background-image: url(../assets/funky.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 3em;
+}
+
+#about {
+  background-color: var(--rose);
+  color: var(--gimblet);
+}
+
+#about img {
+  width: 25%;
+}
+
+#contact {
+  background-color: var(--pink);
+}
+
+#contact .btn {
+  background-color: white;
+  color: black;
+}
+
+#contact .btn.disabled:hover {
+  background-color: white;
+  color: black;
+}
+
+#contact .btn:hover {
+  background-color: var(--rose);
+  color: white;
+}
+
+#contact h2 {
+  color: rgba(250, 250, 250, 0.7);
+}
+
+#contact input,
+#contact textarea {
+  background-color: rgba(250, 250, 250, 0.7);
+  border: none;
+}
+
+footer {
+  background-color: var(--sirocco);
+  color: var(--gimblet);
+}
+
+/* footer h4 {
+  color: var(--palm-leaf);
+} */
+
+.btn-social {
+  background-color: var(--palm-leaf);
+  color: white;
+}
+
+.btn-social:hover {
+  color: var(--rose);
+  background-color: var(--pink);
+}
+
+@media only screen and (max-width: 992px) {
+  #about img {
+    width: 50%;
+  }
+
+  .service .caption {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #about img {
+    width: 100%;
+  }
+
+  section {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
