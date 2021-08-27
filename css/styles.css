@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap');
 
+/* @font-face {
+  font-family: 'isidoraRegular';
+  src: url('../assets/fonts/Isidora-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'madina';
+  src: url('../assets/fonts/Madina.otf') format('otf');
+} */
+
 body,
 p,
 a {
@@ -14,6 +24,19 @@ h4,
   font-family: 'Berkshire Swash', cursive;
 }
 
+body.font-test,
+body.font-test p,
+body.font-test a {
+  font-family: 'isidoraRegular';
+}
+
+body.font-test h1,
+body.font-test h2,
+body.font-test h3,
+body.font-test h4 {
+  font-family: 'madina';
+}
+
 :root {
   --palm-leaf: #14210A;
   --funk-green: #226019;
@@ -23,6 +46,16 @@ h4,
   --pink: #e8bdc4;
   --rose: #8b575b;
   --t-gimblet: rgba(194, 188, 123, 0.7);
+  /* Color Test */
+  --grey: #e5e4dd;
+  --light-green: #cdd8d2;
+  --green: #a7b18c;
+  --maroon: #79575a;
+  --new-pink: #f3939c;
+  --light-pink: #f8e2dc;
+  --clay: #cba38d;
+  --mustard: #c8a92a;
+  --dark-blue: #3f606e;
 }
 
 section,
@@ -35,8 +68,16 @@ section#services {
   padding-bottom: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .navbar {
-  background-color: var(--sirocco);
+  background-color: var(--light-green);
 }
 
 .navbar a {
@@ -44,11 +85,15 @@ section#services {
 }
 
 .navbar a:hover {
-  color: var(--fruit-salad);
+  color: var(--maroon);
 }
 
 a.navbar-brand {
-  color: var(--pink);
+  color: var(--maroon);
+}
+
+a.navbar-brand:hover {
+  color: var(--new-pink);
 }
 
 button.navbar-toggler {
@@ -67,10 +112,63 @@ button.navbar-toggler {
 
 .masthead h1 {
   margin-top: 72px;
+  font-size: 60px;
+}
+
+.masthead h4 {
+  font-size: 35px;
+}
+
+.top-margin {
+  margin-top: 72px;
+}
+
+#faqPage {
+  background-color: var(--palm-leaf);
+  color: rgba(250, 250, 250, 0.7);
+}
+
+#estheticsPage {
+  background-color: var(--gimblet);
+  color: rgba(250, 250, 250, 0.7);
+}
+
+#estheticsPage a {
+  color: var(--maroon);
+}
+
+#estheticsPage a:hover {
+  color: var(--palm-leaf);
+}
+
+#testimonials {
+  background-color: var(--dark-blue);
+  color: rgba(250, 250, 250, 0.7);
+}
+
+#testimonials img {
+  border-radius: 50%;
+}
+
+#massagePage {
+  background-color: var(--sirocco);
+  color: rgba(250, 250, 250, 0.7);
+}
+
+#massagePage a {
+  color: var(--mustard);
+}
+
+#massagePage a:hover {
+  color: var(--new-pink);
 }
 
 #services {
-  background-color: var(--palm-leaf);
+  background-color: var(--maroon);
+}
+
+#services a {
+  text-decoration: none;
 }
 
 #massage {
@@ -145,8 +243,8 @@ button.navbar-toggler {
 }
 
 #about {
-  background-color: var(--rose);
-  color: var(--gimblet);
+  background-color: var(--green);
+  color: var(--maroon);
 }
 
 #about img {
@@ -154,12 +252,12 @@ button.navbar-toggler {
 }
 
 #contact {
-  background-color: var(--pink);
+  background-color: var(--clay);
 }
 
 #contact .btn {
-  background-color: white;
-  color: black;
+  background-color: rgba(250, 250, 250, 0.7);
+  color: var(--maroon);
 }
 
 #contact .btn.disabled:hover {
@@ -180,16 +278,52 @@ button.navbar-toggler {
 #contact textarea {
   background-color: rgba(250, 250, 250, 0.7);
   border: none;
+  color: var(--maroon);
+}
+
+#contact label {
+  color: var(--maroon);
+}
+
+#certs {
+  background-color: var(--green);
+  color: var(--maroon);
+}
+
+.block-quote {
+  min-height: 420px;
+}
+
+.top-quote,
+.bottom-quote {
+  position: relative;
+  font-size: 4rem;
+}
+
+.top-quote {
+  top: 23px;
+}
+
+.block-quote .top-quote {
+  left: -50%;
+}
+
+.bottom-quote {
+  bottom: 23px;
 }
 
 footer {
-  background-color: var(--sirocco);
-  color: var(--gimblet);
+  background-color: var(--light-pink);
+  color: var(--maroon);
 }
 
-/* footer h4 {
+footer a {
   color: var(--palm-leaf);
-} */
+}
+
+footer a:hover {
+  color: var(--green);
+}
 
 .btn-social {
   background-color: var(--palm-leaf);
@@ -209,6 +343,14 @@ footer {
   .service .caption {
     opacity: 1;
   }
+
+  .block-quote {
+    min-height: 0px;
+  }
+
+  .top-margin {
+    margin-top: 56px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -219,5 +361,13 @@ footer {
   section {
     padding-left: 1.5em;
     padding-right: 1.5em;
+  }
+
+  .masthead h1 {
+    font-size: 40px;
+  }
+
+  .masthead h4 {
+    font-size: 25px;
   }
 }
