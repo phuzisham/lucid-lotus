@@ -102,12 +102,12 @@ button.navbar-toggler {
 }
 
 .masthead {
-  background-image: url(../assets/masthead.jpg);
+  background-image: url(../assets/lotus.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  color: var(--gimblet);
+  color: #d4ceae;
 }
 
 .masthead h1 {
@@ -164,7 +164,7 @@ button.navbar-toggler {
 }
 
 #services {
-  background-color: var(--maroon);
+  background-color: #d4ceae;
 }
 
 #services a {
@@ -172,51 +172,57 @@ button.navbar-toggler {
 }
 
 #massage {
-  background-image: url(../assets/Optimized-massage.jpg);
+  background-image: url(../assets/beach-massage.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 260px;
+  border-radius: 13%;
 }
 
 #acutonics {
-  background-image: url(../assets/Optimized-acutonics.jpg);
+  background-image: url(../assets/fire.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 260px;
+  border-radius: 13%;
 }
 
 #yoga {
-  background-image: url(../assets/Optimized-yoga.jpg);
+  background-image: url(../assets/lotus-three.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 260px;
+  border-radius: 13%;
 }
 
 #lotus {
-  background-image: url(../assets/Optimized-lotus.jpg);
+  background-image: url(../assets/test.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 260px;
+  border-radius: 13%;
 }
 
 #esthetics {
-  background-image: url(../assets/Optimized-esthetics.jpg);
+  background-image: url(../assets/oils.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 260px;
+  border-radius: 13%;
 }
 
 #breath {
-  background-image: url(../assets/Optimized-breath.jpg);
+  background-image: url(../assets/cass-portfolio-two.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 260px;
+  border-radius: 13%;
 }
 
 .service .caption {
@@ -234,12 +240,12 @@ button.navbar-toggler {
 }
 
 .funky-back {
-  background-image: url(../assets/funky.jpg);
+  background-image: url(../assets/moss.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 3em;
+  height: 4em;
 }
 
 #about {
@@ -252,7 +258,7 @@ button.navbar-toggler {
 }
 
 #contact {
-  background-color: var(--clay);
+  background-color: #36404a;
 }
 
 #contact .btn {
@@ -286,7 +292,7 @@ button.navbar-toggler {
 }
 
 #certs {
-  background-color: var(--green);
+  background-color: #d4ceae;
   color: var(--maroon);
 }
 
@@ -313,7 +319,7 @@ button.navbar-toggler {
 }
 
 footer {
-  background-color: var(--light-pink);
+  background-color: #7b7361;
   color: var(--maroon);
 }
 
