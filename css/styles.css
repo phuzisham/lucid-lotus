@@ -167,7 +167,7 @@ button.navbar-toggler {
 }
 
 #estheticsPage a:hover {
-  color: var(--palm-leaf);
+  color: var(--dark-blue);
 }
 
 #testimonials {
@@ -184,11 +184,13 @@ button.navbar-toggler {
   color: rgba(250, 250, 250, 0.7);
 }
 
-#massagePage a {
+#massagePage a,
+#testimonials a {
   color: var(--mustard);
 }
 
-#massagePage a:hover {
+#massagePage a:hover,
+#testimonials a:hover {
   color: var(--new-pink);
 }
 
