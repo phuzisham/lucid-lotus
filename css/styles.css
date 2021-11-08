@@ -141,6 +141,10 @@ button.navbar-toggler {
   color: #d4ceae;
 }
 
+.masthead.success {
+  background-image: url(../assets/success.jpg);
+}
+
 .masthead h1 {
   margin-top: 72px;
   font-size: 60px;
