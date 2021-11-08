@@ -10,6 +10,10 @@
   src: url('../assets/fonts/Madina.otf') format('otf');
 } */
 
+html {
+  overflow-x: hidden;
+}
+
 body,
 p,
 a {
